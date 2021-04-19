@@ -1,0 +1,16 @@
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\teleprgm2.exe
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\teleprgm2.deps.json
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\teleprgm2.runtimeconfig.json
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\teleprgm2.runtimeconfig.dev.json
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\teleprgm2.dll
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\ref\teleprgm2.dll
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\bin\Debug\net5.0\teleprgm2.pdb
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.csprojAssemblyReference.cache
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.AssemblyInfoInputs.cache
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.AssemblyInfo.cs
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.csproj.CoreCompileInputs.cache
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.dll
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\ref\teleprgm2.dll
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.pdb
+C:\Users\SIRAGON\Proyecto C#\teleprgm2\obj\Debug\net5.0\teleprgm2.genruntimeconfig.cache
