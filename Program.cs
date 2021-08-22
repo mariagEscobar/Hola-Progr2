@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Calculadora
 {
@@ -68,7 +68,6 @@ namespace Calculadora
             PrecioDolar = Cantidad * 4122843;
             PrecioPeso = Cantidad * 1066;
             PrecioSol = Cantidad * 1005229;
-            
         }
     }
 
@@ -124,7 +123,7 @@ namespace Calculadora
         public float Cantidad
         {
             get { return cantidad; }
-            set { cantidad = value }
+            set { cantidad = value; }
         }
         
         public float PrecioDolar{
@@ -201,8 +200,8 @@ namespace Calculadora
         Console.WriteLine("Presione cualquier tecla para cerrar este menu");
         Console.ReadKey();
     }
-        
+
     }
 
-    
 }
+      
