@@ -1,79 +1,208 @@
 ﻿using System;
 
-namespace EjercicioImpar
+namespace Calculadora
 {
-    class Animales
+    class Divisas
     {
         
-        private string nombre;
-        private int edad;
+        private float valor;
+        private float cantidad;
        
 
-        public string Nomb
+        public float Valor
         {
-            get { return nombre; }
-            set { nombre = value; }
+            get { return valor; }
+            set { valor = value; }
         }
-        public int Edad
+        public float Cantidad
         {
-            get { return edad; }
-            set
-            {
-                if (value <= 0)
-                {
-                   
-                    Console.WriteLine("No puede asignar valores negativos");
-                }
-                else { edad = value; }
-            }
+            get { return cantidad; }
+            set { cantidad = value }
         }
 
      
     }
-    class Perros : Animales
+  
+
+    
+    class Dolares : Divisas
     {
-
-        private string perrarinafav;
-        private string raza;
-
-        public string Perrarinafav
-        {
-            get { return perrarinafav; }
-            set { perrarinafav = value; }
-        }
-
-        public string Raza
-        {
-            get { return raza; }
-            set { raza = value; }
-        }
-
-
-        class Program
-
-        {
-            static void Main(string[] args)
-            {
-                Perros p = new Perros();
-
-                Console.WriteLine("----Historias Clínicas del Hospital Veterianario:---- ");
-                Console.WriteLine("Ingrese nombre del ejemplar:");
-                p.Nomb = Console.ReadLine();
-                Console.WriteLine("Ingrese la edad del ejemplar: ");
-                p.Edad = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Ingrese raza del perro: ");
-                p.Raza = Console.ReadLine();
-                Console.WriteLine("Ingrese Marca de su Perrarina Preferida: ");
-                p.Perrarinafav = Console.ReadLine();
-
-                //Datos de salida
-
-                Console.WriteLine("\n ----Datos:---- \n");
-                Console.WriteLine("Nombre: {0}", p.Nomb);
-                Console.WriteLine("Edad: {0}", p.Edad);
-                Console.WriteLine("Raza: {0}", p.Raza);
-                Console.WriteLine("Perrarina Favorita: {0}", p.Perrarinafav);
-            }
+        public float preciodolar;
+        public float PrecioDolar{
+            get{return preciodolar;}
+            set{preciodolar = value;}
+        
         }
     }
+
+
+   
+    class PesoColombiano : Divisas 
+    {
+        public float preciopeso;
+        public float PrecioPeso{ 
+            get{return preciopeso;}
+            set{preciopeso = value;}
+        }
+    }
+   
+   
+    class SolPeruano : Divisas
+    {
+        public float preciosol;
+        public float PrecioSol{
+            get{ return preciosol;}
+            set{preciosol = value;}
+        }
+
+    
+    }
+       
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float PrecioDolar, PrecioPeso, PrecioSol, Cantidad;
+
+            PrecioDolar = Cantidad * 4122843;
+            PrecioPeso = Cantidad * 1066;
+            PrecioSol = Cantidad * 1005229;
+            
+        }
+    }
+
+
+    class controlador 
+    {
+        private vista_Consola oDisplay;
+        public controlador ()
+        {
+            oDisplay = new vista_Consola();
+            
+            if(oDisplay.Valor == 1)
+            {
+                Dolares oDolar;
+                oDolar = new Dolares (PrecioDolar);
+                oDisplay.Valor = oDolar.Valor;
+                oDisplay.MuestraTotales();
+            }
+            
+            
+            if(oDisplay.Valor == 2)
+            {
+                PesoColombiano oPesocolombiano;
+                oPesocolombiano = new PesoColombiano (PrecioPeso);
+                oDisplay.Valor = oPesocolombiano.Valor;
+                oDisplay.MuestraTotales();
+            }
+            
+            if (oDisplay.Valor == 3)
+            {
+                SolPeruano oSolperuano;
+                oSolperuano = new SolPeruano (PrecioSol);
+                oDisplay.Valor = oSolperuano.Valor;
+                oDisplay.MuestraTotales();
+            }
+            
+        }
+    }
+    
+    class vista_Consola
+    {
+        public float valor;
+        public float cantidad;
+        public float preciodolar;
+        public float preciopeso;
+        public float preciosol;
+
+        public float Valor
+        {
+            get { return valor; }
+            set { valor = value; }
+        }
+        public float Cantidad
+        {
+            get { return cantidad; }
+            set { cantidad = value }
+        }
+        
+        public float PrecioDolar{
+            get{return preciodolar;}
+            set{preciodolar = value;}
+        
+        }
+        
+        public float PrecioPeso{ 
+            get{return preciopeso;}
+            set{preciopeso = value;}
+        }
+        
+        public float PrecioSol{
+            get{ return preciosol;}
+            set{preciosol = value;}
+        }
+        
+
+    
+        public vista_Consola()
+    {
+        this.ObtieneValores();
+    }
+    
+    
+        private void ObtieneValores()
+        {
+        Console.WriteLine("¡Calculadora de divisas con respecto al Bolivar!\n");
+        Console.WriteLine("----------------------------------------------------------");
+        Console.WriteLine("--------------Ingrese la moneda a convertir---------------");
+        Console.WriteLine("----------------------------------------------------------\n");
+        Console.WriteLine("\t1 - Dolares");
+        Console.WriteLine("\t2 - Peso Colombiano");
+        Console.WriteLine("\t3 - Sol Peruano");
+        
+        
+        
+        
+        switch (Console.ReadLine())
+        {
+            case "1":
+            this.Valor = 1;
+            Console.WriteLine("Ingrese la cantidad a convertir:");
+            l = float.Parse(Console.ReadLine());
+            Cantidad = float.Parse(Console.ReadLine());
+            Console.WriteLine(PrecioDolar);
+            break;
+            
+            case "2":
+            this.Valor = 2;
+            Console.WriteLine("Ingrese la cantidad a convertir:");
+            l = float.Parse(Console.ReadLine());
+            Cantidad = float.Parse(Console.ReadLine());
+            Console.WriteLine(PrecioPeso);
+            break;
+            
+            case"3":
+            this.Valor = 3;
+            Console.WriteLine("Ingrese la cantidad a convertir:");
+            l = float.Parse(Console.ReadLine());
+            Cantidad = float.Parse(Console.ReadLine());
+            Console.WriteLine(PrecioSol);
+            break;
+
+        }
+        
+        Console.WriteLine("Presione cualquier tecla para cerrar este menú");
+        Console.ReadKey();
+    }
+    
+    public void MuestraTotales()
+    {
+        Console.WriteLine("Presione cualquier tecla para cerrar este menu");
+        Console.ReadKey();
+    }
+        
+    }
+
+    
 }
