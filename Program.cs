@@ -8,7 +8,6 @@ namespace Calculadora
         private float valor;
         private float cantidad;
        
-
         public float Valor
         {
             get { return valor; }
@@ -23,8 +22,6 @@ namespace Calculadora
      
     }
   
-
-    
     class Dolares : Divisas
     {
         public float preciodolar;
@@ -35,8 +32,6 @@ namespace Calculadora
         }
     }
 
-
-   
     class PesoColombiano : Divisas 
     {
         public float preciopeso;
@@ -45,7 +40,6 @@ namespace Calculadora
             set{preciopeso = value;}
         }
     }
-   
    
     class SolPeruano : Divisas
     {
@@ -58,13 +52,11 @@ namespace Calculadora
     
     }
        
-
     class Program
     {
         static void Main(string[] args)
         {
             float PrecioDolar, PrecioPeso, PrecioSol, Cantidad;
-
             PrecioDolar = Cantidad * 4122843;
             PrecioPeso = Cantidad * 1066;
             PrecioSol = Cantidad * 1005229;
@@ -86,8 +78,6 @@ namespace Calculadora
                 oDisplay.Valor = oDolar.Valor;
                 oDisplay.MuestraTotales();
             }
-            
-            
             if(oDisplay.Valor == 2)
             {
                 PesoColombiano oPesocolombiano;
@@ -95,7 +85,6 @@ namespace Calculadora
                 oDisplay.Valor = oPesocolombiano.Valor;
                 oDisplay.MuestraTotales();
             }
-            
             if (oDisplay.Valor == 3)
             {
                 SolPeruano oSolperuano;
@@ -103,7 +92,6 @@ namespace Calculadora
                 oDisplay.Valor = oSolperuano.Valor;
                 oDisplay.MuestraTotales();
             }
-            
         }
     }
     
@@ -125,30 +113,24 @@ namespace Calculadora
             get { return cantidad; }
             set { cantidad = value; }
         }
-        
         public float PrecioDolar{
             get{return preciodolar;}
             set{preciodolar = value;}
         
         }
-        
         public float PrecioPeso{ 
             get{return preciopeso;}
             set{preciopeso = value;}
         }
-        
         public float PrecioSol{
             get{ return preciosol;}
             set{preciosol = value;}
         }
         
-
-    
         public vista_Consola()
     {
         this.ObtieneValores();
     }
-    
     
         private void ObtieneValores()
         {
@@ -159,9 +141,6 @@ namespace Calculadora
         Console.WriteLine("\t1 - Dolares");
         Console.WriteLine("\t2 - Peso Colombiano");
         Console.WriteLine("\t3 - Sol Peruano");
-        
-        
-        
         
         switch (Console.ReadLine())
         {
@@ -188,20 +167,15 @@ namespace Calculadora
             Cantidad = float.Parse(Console.ReadLine());
             Console.WriteLine(PrecioSol);
             break;
-
         }
-        
         Console.WriteLine("Presione cualquier tecla para cerrar este menú");
         Console.ReadKey();
     }
-    
     public void MuestraTotales()
     {
         Console.WriteLine("Presione cualquier tecla para cerrar este menu");
         Console.ReadKey();
     }
-
     }
-
 }
       
