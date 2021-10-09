@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace EjercicioCadena
 {
@@ -13,7 +13,7 @@ namespace EjercicioCadena
             string[] p = cadena.Split();
             for (int i = 0; i < p.Length; i++)  
             {
-                Console.WriteLine("\n \t Palabra {0} \n {1}  ",(i+1), p[i]); 
+                Console.WriteLine("\n \t Palabra {0} : {1}  ",(i+1), p[i]); 
                 
             }
         }
