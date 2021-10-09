@@ -2,9 +2,9 @@ using System;
 
 namespace EjercicioArreglo
 {
-    public class main
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
             int i;
             float SumarValores = 0;
